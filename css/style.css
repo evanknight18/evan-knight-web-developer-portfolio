@@ -1,0 +1,32 @@
+/* Set a professional font for the entire portfolio */
+body {
+  font-family: "Arial", sans-serif;
+}
+/* styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Add your custom styles here */
+body {
+  background-color: black;
+}
+
+/* Set a professional color scheme with shades of red and blue */
+
+
+/* Add a container for the main content */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Customize the links with the shades of red and blue */
+a {
+  color: #007bff; /* Blue */
+}
+
+a:hover {
+  color: #dc3545; /* Red */
+}
