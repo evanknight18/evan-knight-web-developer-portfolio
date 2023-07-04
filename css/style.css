@@ -30,3 +30,33 @@ a {
 a:hover {
   color: #dc3545; /* Red */
 }
+
+/* styles.css */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 100px; /* Adjust the size as per your logo dimensions */
+  height: auto;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 10px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
