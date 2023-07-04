@@ -2,96 +2,134 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evan Knight Web Developer Portfolio</title>
-    <link href="css/tailwind.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evan Knight's Web Developer Portfolio</title>
+  <link href="css/tailwind.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
 
-  <body>
-    <header class="fixed top-0 left-0 right-0 bg-gray-900 text-white p-4 z-10">
-      <div class="container mx-auto flex justify-between items-center">
-        <div class="logo">
-          <a href="index.html">
-            <img src="path/to/your/logo.png" alt="Logo" class="logo-image">
-          </a>
-        </div>
-        <nav class="navigation">
-          <ul class="flex space-x-4">
-            <li><a href="about.html" class="text-white hover:text-gray-400">About Me</a></li>
-            <li><a href="contact.html" class="text-white hover:text-gray-400">Contact</a></li>
-          </ul>
-        </nav>
+<body>
+  <header class="fixed top-0 left-0 right-0 bg-gray-900 text-white p-4 z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="logo">
+        <a href="index.html">
+          <img src="path/to/your/logo.png" alt="Logo" class="logo-image">
+        </a>
       </div>
-    </header>
+      <nav class="navigation">
+        <ul class="flex space-x-4">
+          <li><a href="about.html" class="text-white hover:text-gray-400">About Me</a></li>
+          <li><a href="contact.html" class="text-white hover:text-gray-400">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <main>
-    <section id="hero" class="bg-blue-500 py-10">
+    <section class="py-20 bg-gray-900">
       <div class="container mx-auto px-4">
-        <h1 class="text-4xl font-bold">Welcome to my Web Developer Portfolio</h1>
-        <p>Hello, I'm Evan Knight, a web developer passionate about creating engaging and user-friendly websites.</p>
-        <a href="#projects" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md mt-4 inline-block">View Projects</a>
+        <h1 class="text-5xl font-bold text-white mb-6">Welcome to Evan Knight's Web Developer Portfolio</h1>
+        <p class="text-xl text-gray-300 mb-8">I'm a full-stack web developer passionate about creating practical and functional websites.</p>
+        <a href="#featured-projects" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Projects</a>
       </div>
     </section>
 
-    <section class="py-10 bg-gray-100">
+
+    <section id="featured-projects" class="py-10 bg-gray-100">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold mb-6">Featured Projects</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          
           <div class="bg-white rounded-lg p-4 shadow-md">
-            <h3 class="text-xl font-bold mb-2">Project 1</h3>
-            <img src="path/to/project1-thumbnail.jpg" alt="Project 1" class="w-full mb-4">
-            <p class="text-gray-600">Description of Project 1 goes here.</p>
-            <a href="#" class="text-blue-500 hover:text-blue-700 mt-2 inline-block">Read More</a>
+            <h3 class="text-xl font-bold mb-2">Crypt Keeper</h3>
+            <img src="path/to/project1-thumbnail.jpg" alt="Crypt Keeper" class="w-full mb-4">
+            <p class="text-gray-600 project-description hidden">
+              Crypt Keeper is an intuitive, full-stack web application designed to simplify cryptocurrency portfolio management.
+              It leverages technologies such as node.js, Express.js, Handlebars.js, MySQL, Sequelize ORM, and Chart.js to provide a comprehensive solution for tracking and analyzing cryptocurrency investments.
+            </p>
+            <a href="javascript:void(0)" class="text-blue-500 hover:text-blue-700 mt-2 inline-block" onclick="toggleDescription(this)">Read More</a>
           </div>
+          
           <div class="bg-white rounded-lg p-4 shadow-md">
-            <h3 class="text-xl font-bold mb-2">Project 2</h3>
-            <img src="path/to/project2-thumbnail.jpg" alt="Project 2" class="w-full mb-4">
-            <p class="text-gray-600">Description of Project 2 goes here.</p>
-            <a href="#" class="text-blue-500 hover:text-blue-700 mt-2 inline-block">Read More</a>
+            <h3 class="text-xl font-bold mb-2">MyPlaylistr</h3>
+            <img src="path/to/project2-thumbnail.jpg" alt="MusicPlayer" class="w-full mb-4">
+            <p class="text-gray-600 project-description hidden">
+              MusicPlayer is an interactive web application created using HTML, CSS, and JavaScript coding.
+              It utilizes a musicPlayer sheet to pull song files from your computer, providing a demonstration of the original idea.
+              The application allows you to choose a file, which will autoplay and be automatically added to the playlist.
+              Additionally, the project incorporates the TicketMaster API, enabling users to search for upcoming shows of their favorite artists.
+              Simply type in the names of different artists in the events search bar to explore their scheduled performances.
+            </p>
+            <a href="javascript:void(0)" class="text-blue-500 hover:text-blue-700 mt-2 inline-block" onclick="toggleDescription(this)">Read More</a>
           </div>
+          
           <div class="bg-white rounded-lg p-4 shadow-md">
-            <h3 class="text-xl font-bold mb-2">Project 3</h3>
-            <img src="path/to/project3-thumbnail.jpg" alt="Project 3" class="w-full mb-4">
-            <p class="text-gray-600">Description of Project 3 goes here.</p>
-            <a href="#" class="text-blue-500 hover:text-blue-700 mt-2 inline-block">Read More</a>
+            <h3 class="text-xl font-bold mb-2">Professional README Generator</h3>
+            <img src="path/to/project3-thumbnail.jpg" alt="Professional README Generator" class="w-full mb-4">
+            <p class="text-gray-600 project-description hidden">
+              The Professional README Generator is a program built using node.js and the inquirer package.
+              It streamlines the process of creating a high-quality and comprehensive README file for your projects.
+              By simply answering a series of prompts, this program generates a professional README based on your input.
+              It ensures that important sections such as project description, installation instructions, usage guidelines, and contact information are included in the generated README.
+              This saves you time and effort, allowing you to focus on developing your projects.
+            </p>
+            <a href="javascript:void(0)" class="text-blue-500 hover:text-blue-700 mt-2 inline-block" onclick="toggleDescription(this)">Read More</a>
           </div>
+          
           <div class="bg-white rounded-lg p-4 shadow-md">
-            <h3 class="text-xl font-bold mb-2">Project 4</h3>
-            <img src="path/to/project4-thumbnail.jpg" alt="Project 4" class="w-full mb-4">
-            <p class="text-gray-600">Description of Project 4 goes here.</p>
-            <a href="#" class="text-blue-500 hover:text-blue-700 mt-2 inline-block">Read More</a>
+            <h3 class="text-xl font-bold mb-2">SVG Image and Logo Generator</h3>
+            <img src="path/to/project4-thumbnail.jpg" alt="SVG Image and Logo Generator" class="w-full mb-4">
+            <p class="text-gray-600 project-description hidden">
+              The SVG Image and Logo Generator is a project that allows users to generate SVG (Scalable Vector Graphics) files based on their input preferences.
+              By leveraging this tool, users can easily create custom SVG images and logos that can be used in various design projects.
+              The project utilizes Node.js and the Inquirer package to collect user preferences and generate the SVG file accordingly.
+              Whether you need simple shapes or complex designs, this generator provides a flexible solution for creating scalable graphics.
+              To ensure code quality, the project also integrates the Jest package for testing purposes.
+            </p>
+            <a href="javascript:void(0)" class="text-blue-500 hover:text-blue-700 mt-2 inline-block" onclick="toggleDescription(this)">Read More</a>
           </div>
+          
           <div class="bg-white rounded-lg p-4 shadow-md">
             <h3 class="text-xl font-bold mb-2">Project 5</h3>
             <img src="path/to/project5-thumbnail.jpg" alt="Project 5" class="w-full mb-4">
-            <p class="text-gray-600">Description of Project 5 goes here.</p>
-            <a href="#" class="text-blue-500 hover:text-blue-700 mt-2 inline-block">Read More</a>
+            <p class="text-gray-600 project-description hidden">
+              Description of Project 5 goes here.
+            </p>
+            <a href="javascript:void(0)" class="text-blue-500 hover:text-blue-700 mt-2 inline-block" onclick="toggleDescription(this)">Read More</a>
           </div>
+          
           <div class="bg-white rounded-lg p-4 shadow-md">
             <h3 class="text-xl font-bold mb-2">Project 6</h3>
             <img src="path/to/project6-thumbnail.jpg" alt="Project 6" class="w-full mb-4">
-            <p class="text-gray-600">Description of Project 6 goes here.</p>
-            <a href="#" class="text-blue-500 hover:text-blue-700 mt-2 inline-block">Read More</a>
+            <p class="text-gray-600 project-description hidden">
+              Description of Project 6 goes here.
+            </p>
+            <a href="javascript:void(0)" class="text-blue-500 hover:text-blue-700 mt-2 inline-block" onclick="toggleDescription(this)">Read More</a>
           </div>
+          
           <div class="bg-white rounded-lg p-4 shadow-md">
             <h3 class="text-xl font-bold mb-2">Project 7</h3>
             <img src="path/to/project7-thumbnail.jpg" alt="Project 7" class="w-full mb-4">
-            <p class="text-gray-600">Description of Project 7 goes here.</p>
-            <a href="#" class="text-blue-500 hover:text-blue-700 mt-2 inline-block">Read More</a>
+            <p class="text-gray-600 project-description hidden">
+              Description of Project 7 goes here.
+            </p>
+            <a href="javascript:void(0)" class="text-blue-500 hover:text-blue-700 mt-2 inline-block" onclick="toggleDescription(this)">Read More</a>
           </div>
+          
           <div class="bg-white rounded-lg p-4 shadow-md">
             <h3 class="text-xl font-bold mb-2">Project 8</h3>
             <img src="path/to/project8-thumbnail.jpg" alt="Project 8" class="w-full mb-4">
-            <p class="text-gray-600">Description of Project 8 goes here.</p>
-            <a href="#" class="text-blue-500 hover:text-blue-700 mt-2 inline-block">Read More</a>
+            <p class="text-gray-600 project-description hidden">
+              Description of Project 8 goes here.
+            </p>
+            <a href="javascript:void(0)" class="text-blue-500 hover:text-blue-700 mt-2 inline-block" onclick="toggleDescription(this)">Read More</a>
           </div>
         </div>
       </div>
     </section>
-    
+
 
     <footer class="bg-gray-900 text-white py-4">
       <div class="container mx-auto px-4">
@@ -102,14 +140,15 @@
           <div class="w-full md:w-1/2 mt-4 md:mt-0">
             <ul class="flex justify-end space-x-4">
               <li><a href="https://github.com/your-github-username" class="text-white hover:text-gray-400"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/your-linkedin-username" class="text-white hover:text-gray-400"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/your-linkedin-username" class="text-white hover:text-gray-400"><i class="fab fa-linkedin"></i></a></li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
-    
-    
+
+    <script src="/js/script.js"></script>
+
 </body>
 
 </html>
