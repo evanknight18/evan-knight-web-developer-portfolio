@@ -15,20 +15,20 @@
     <div class="container mx-auto flex justify-between items-center">
       <div class="logo">
         <a href="index.html">
-          <img src="path/to/your/logo.png" alt="Logo" class="logo-image">
+          <img src="/images/logo-no-background.png" alt="Logo" class="logo-image" width="50" height="50">
         </a>
       </div>
       <nav class="navigation">
         <ul class="flex space-x-4">
-          <li><a href="about.html" class="text-white hover:text-gray-400">About Me</a></li>
-          <li><a href="contact.html" class="text-white hover:text-gray-400">Contact</a></li>
+          <li><a href="/about/index.html" class="text-white hover:text-gray-400">About Me</a></li>
+          <li><a href="/contact/index.html" class="text-white hover:text-gray-400">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="py-20 bg-gray-900">
+    <section class="py-20 mt-16 bg-gray-900">
       <div class="container mx-auto px-4">
         <h1 class="text-5xl font-bold text-white mb-6">Welcome to Evan Knight's Web Developer Portfolio</h1>
         <p class="text-xl text-gray-300 mb-8">I'm a full-stack web developer passionate about creating practical and functional websites.</p>
@@ -43,7 +43,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           
           <div class="bg-white rounded-lg p-4 shadow-md">
-            <h3 class="text-xl font-bold mb-2">Crypt Keeper</h3>
+            <h3 class="text-xl font-bold mb-2"><a href="https://crypt-keeper-project2.herokuapp.com/" class="text-blue-500 hover:text-blue-700" target="_blank">Crypt Keeper</a></h3>
             <img src="path/to/project1-thumbnail.jpg" alt="Crypt Keeper" class="w-full mb-4">
             <p class="text-gray-600 project-description hidden">
               Crypt Keeper is an intuitive, full-stack web application designed to simplify cryptocurrency portfolio management.
@@ -52,11 +52,12 @@
             <a href="javascript:void(0)" class="text-blue-500 hover:text-blue-700 mt-2 inline-block" onclick="toggleDescription(this)">Read More</a>
           </div>
           
+          
           <div class="bg-white rounded-lg p-4 shadow-md">
-            <h3 class="text-xl font-bold mb-2">MyPlaylistr</h3>
-            <img src="path/to/project2-thumbnail.jpg" alt="MusicPlayer" class="w-full mb-4">
+            <h3 class="text-xl font-bold mb-2"><a href="https://evanknight18.github.io/JavaScript-Music-Player/" class="text-blue-500 hover:text-blue-700" target="_blank">MyPlaylist</a></h3>
+            <img src="path/to/project2-thumbnail.jpg" alt="MyPlaylist" class="w-full mb-4">
             <p class="text-gray-600 project-description hidden">
-              MusicPlayer is an interactive web application created using HTML, CSS, and JavaScript coding.
+              MyPlaylist is an interactive web application created using HTML, CSS, and JavaScript coding.
               It utilizes a musicPlayer sheet to pull song files from your computer, providing a demonstration of the original idea.
               The application allows you to choose a file, which will autoplay and be automatically added to the playlist.
               Additionally, the project incorporates the TicketMaster API, enabling users to search for upcoming shows of their favorite artists.
@@ -65,8 +66,9 @@
             <a href="javascript:void(0)" class="text-blue-500 hover:text-blue-700 mt-2 inline-block" onclick="toggleDescription(this)">Read More</a>
           </div>
           
+          
           <div class="bg-white rounded-lg p-4 shadow-md">
-            <h3 class="text-xl font-bold mb-2">Professional README Generator</h3>
+            <h3 class="text-xl font-bold mb-2"><a href="https://github.com/evanknight18/Professional-README-Generator" class="text-blue-500 hover:text-blue-700" target="_blank">Professional README Generator</a></h3>
             <img src="path/to/project3-thumbnail.jpg" alt="Professional README Generator" class="w-full mb-4">
             <p class="text-gray-600 project-description hidden">
               The Professional README Generator is a program built using node.js and the inquirer package.
@@ -77,6 +79,7 @@
             </p>
             <a href="javascript:void(0)" class="text-blue-500 hover:text-blue-700 mt-2 inline-block" onclick="toggleDescription(this)">Read More</a>
           </div>
+          
           
           <div class="bg-white rounded-lg p-4 shadow-md">
             <h3 class="text-xl font-bold mb-2">SVG Image and Logo Generator</h3>

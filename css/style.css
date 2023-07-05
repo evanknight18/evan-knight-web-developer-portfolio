@@ -38,9 +38,10 @@ a:hover {
 }
 
 .logo-image {
-  width: 100px; /* Adjust the size as per your logo dimensions */
-  height: auto;
+  width: 10px;
+  height: 10px;
 }
+
 
 .navigation {
   display: flex;
