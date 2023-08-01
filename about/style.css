@@ -1,0 +1,42 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+a {
+  color: #007bff;
+}
+
+a:hover {
+  color: #dc3545;
+}
+
+.my-5 {
+  margin: 1.5rem 0;
+}
+
+.my-2 {
+  margin: 0.75rem 0;
+}
+
+.profile-img {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img i {
+  color: #007bff;
+  font-size: 6rem;
+}
